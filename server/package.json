@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node ./index.js",
-    "build:ui": "cd ../client && npm run build && cp -r dist ../backend",
+    "build:ui": "cd ../client && npm run build && cp -r dist ../server",
     "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && git push"
   },
   "keywords": [],
