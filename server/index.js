@@ -7,7 +7,7 @@ const { toHex } = require('ethereum-cryptography/utils');
 const { keccak256 } = require('ethereum-cryptography/keccak')
 
 
-const port = 3042;
+const port = process.env.PORT || 3042;
 
 app.use(cors());
 app.use(express.json());
