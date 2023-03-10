@@ -4,6 +4,10 @@ import server from "./server";
 function Transfer({ address, setBalance }) {
   const [sendAmount, setSendAmount] = useState("");
   const [recipient, setRecipient] = useState("");
+  // const [signature, setSignature] = useState("");
+  // const [recoveryBit, setRecoveryBit] = useState("");
+  // const [publicKey, setPublicKey] = useState("");
+  // const [messageHash, setMessageHash] = useState("");
 
   const setValue = (setter) => (evt) => setter(evt.target.value);
 
