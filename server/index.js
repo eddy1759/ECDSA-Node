@@ -65,8 +65,9 @@ app.post("/send", async (req, res) => {
   }
 });
 
-app.listen(port, () => {
+app.listen(port, (err) => {
   console.log(`Listening on port ${port}!`);
+  console.log(err)
 });
 
 function setInitialBalance(address) {
